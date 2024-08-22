@@ -644,6 +644,11 @@ main .footer-wrapper .footer {
   display: flex;
   padding: 16px 24px;
 }
+@media screen and (max-width: 1024px) {
+  main .footer-wrapper .footer {
+    padding: 16px;
+  }
+}
 main .footer-wrapper .dark-footer {
   color: rgba(255, 255, 255, 0.8);
   background-color: #777;

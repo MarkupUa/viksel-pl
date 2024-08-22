@@ -296,6 +296,9 @@ main {
       width: 100%;
       display: flex;
       padding: 16px 24px;
+      @media screen and (max-width: 1024px) {
+        padding: 16px;
+      }
     }
     .dark-footer {
       color: rgba(255, 255, 255, 0.8);
