@@ -379,7 +379,7 @@ h1 {
   font-weight: normal;
   padding-bottom: 48px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   h1 {
     font-size: 48px;
     padding-bottom: 24px;
@@ -389,9 +389,10 @@ h1 {
 h2 {
   font-size: 40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   h2 {
     font-size: 28px;
+    text-align: center;
   }
 }
 
@@ -662,6 +663,11 @@ main .footer-wrapper .light-footer {
 
 .reviews {
   padding: 0 0 48px;
+}
+@media screen and (max-width: 1024px) {
+  .reviews {
+    padding: 0 0 24px;
+  }
 }
 .reviews .reviews-row {
   display: flex;
