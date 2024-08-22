@@ -582,7 +582,7 @@ main .products {
   justify-content: space-between;
   padding-bottom: 48px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   main .products {
     flex-direction: column;
   }
@@ -602,9 +602,14 @@ main .products .product-card {
   border-radius: 8px;
   color: rgba(0, 0, 0, 0.9);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   main .products .product-card {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .products .product-card {
+    border: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -657,6 +662,28 @@ main .footer-wrapper .light-footer {
   display: flex;
   gap: 48px;
 }
+@media screen and (max-width: 1024px) {
+  .reviews .reviews-row {
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+}
 .reviews .reviews-row .review {
   width: 20%;
+}
+@media screen and (max-width: 1024px) {
+  .reviews .reviews-row .review {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .reviews .reviews-row .review {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews .reviews-row .review {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
