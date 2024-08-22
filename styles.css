@@ -328,6 +328,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  min-width: 360px;
 }
 
 .skip-link {
@@ -378,9 +379,20 @@ h1 {
   font-weight: normal;
   padding-bottom: 48px;
 }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 48px;
+    padding-bottom: 24px;
+  }
+}
 
 h2 {
   font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 .centered {
@@ -391,11 +403,6 @@ h2 {
   text-align: right;
 }
 
-@media screen and (max-width: 1024px) {
-  .flex-reverse {
-    flex-direction: column-reverse;
-  }
-}
 .btn {
   display: block;
   border-radius: 4px;
@@ -468,6 +475,12 @@ h2 {
   background-size: cover;
   margin-bottom: 48px;
 }
+@media screen and (max-width: 600px) {
+  .main-img {
+    height: 480px;
+    margin-bottom: 24px;
+  }
+}
 .main-img .img-title {
   background-image: url(home-img.png);
   background-size: cover;
@@ -478,6 +491,12 @@ h2 {
   justify-content: center;
   color: #fff;
 }
+@media screen and (max-width: 600px) {
+  .main-img .img-title {
+    width: 360px;
+    height: 360px;
+  }
+}
 .main-img .img-title h1 {
   font-size: 64px;
   letter-spacing: 8px;
@@ -486,10 +505,21 @@ h2 {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   padding: 0;
 }
+@media screen and (max-width: 600px) {
+  .main-img .img-title h1 {
+    font-size: 48px;
+    padding: 0 16px;
+  }
+}
 .main-img .img-title h1 small {
   display: block;
   font-size: 24px;
   line-height: 120%;
+}
+@media screen and (max-width: 600px) {
+  .main-img .img-title h1 small {
+    font-size: 20px;
+  }
 }
 
 main .content {
@@ -506,6 +536,9 @@ main .section {
 @media screen and (max-width: 1024px) {
   main .section {
     flex-direction: column;
+  }
+  main .section.flex-reverse {
+    flex-direction: column-reverse;
   }
 }
 main .section.a-p {
@@ -524,6 +557,11 @@ main .section figure {
 }
 main .section figure.img-p {
   padding: 48px;
+}
+@media screen and (max-width: 600px) {
+  main .section figure.img-p {
+    padding: 0 0 24px;
+  }
 }
 main .section figure.section-img {
   width: 50%;
@@ -544,6 +582,17 @@ main .products {
   justify-content: space-between;
   padding-bottom: 48px;
 }
+@media screen and (max-width: 800px) {
+  main .products {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .products {
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+}
 main .products .product-card {
   max-width: 47%;
   width: 100%;
@@ -552,6 +601,11 @@ main .products .product-card {
   background: #fff;
   border-radius: 8px;
   color: rgba(0, 0, 0, 0.9);
+}
+@media screen and (max-width: 800px) {
+  main .products .product-card {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
   main .products .product-card:hover {
@@ -571,6 +625,11 @@ main .products .product-card h2 {
   font-weight: normal;
   padding: 0 16px 16px;
   font-size: 32px;
+}
+@media screen and (max-width: 600px) {
+  main .products .product-card h2 {
+    font-size: 28px;
+  }
 }
 main .footer-wrapper {
   width: 100%;
