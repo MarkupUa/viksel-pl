@@ -391,6 +391,11 @@ h2 {
   text-align: right;
 }
 
+@media screen and (max-width: 1024px) {
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+}
 .btn {
   display: block;
   border-radius: 4px;
@@ -498,11 +503,21 @@ main .section {
   gap: 48px;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  main .section {
+    flex-direction: column;
+  }
+}
 main .section.a-p {
   padding-top: 48px;
 }
 main .section .item {
   width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  main .section .item {
+    width: 100%;
+  }
 }
 main .section figure {
   margin: 0;
@@ -512,6 +527,11 @@ main .section figure.img-p {
 }
 main .section figure.section-img {
   width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  main .section figure.section-img {
+    width: 100%;
+  }
 }
 main .section figure.section-img img {
   display: block;

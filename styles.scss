@@ -69,6 +69,12 @@ h2 {
   text-align: right;
 }
 
+@media screen and (max-width: 1024px) {
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
 .btn {
   display: block;
   border-radius: 4px;
@@ -179,11 +185,17 @@ main {
     display: flex;
     gap: 48px;
     align-items: center;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
     &.a-p {
       padding-top: 48px;
     }
     .item {
       width: 50%;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
     }
     figure {
       margin: 0;
@@ -192,6 +204,9 @@ main {
       }
       &.section-img {
         width: 50%;
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
         img {
           display: block;
           width: 100%;
