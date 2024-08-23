@@ -523,6 +523,16 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 48px;
+  position: relative;
+}
+.main-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 600px) {
   .main-img {
@@ -539,6 +549,8 @@ h3 {
   align-items: end;
   justify-content: center;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 600px) {
   .main-img .img-title {
