@@ -362,6 +362,20 @@ a {
     transform: scale(1.035);
   }
 }
+a.social {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  a.social {
+    transition: all 0.25s;
+  }
+  a.social:hover {
+    transform: scale(1.035);
+  }
+}
+a.social svg {
+  display: block;
+}
 a.buy-bnt {
   background: #3093b1;
   text-decoration: none;
@@ -734,6 +748,7 @@ main .footer-wrapper {
 main .footer-wrapper .footer {
   width: 100%;
   display: flex;
+  align-items: center;
   padding: 16px 24px;
 }
 @media screen and (max-width: 1024px) {
@@ -749,7 +764,14 @@ main .footer-wrapper .dark-footer p {
   padding: 0;
 }
 main .footer-wrapper .light-footer {
-  justify-content: end;
+  justify-content: space-between;
+}
+main .footer-wrapper .light-footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 8px;
 }
 
 .reviews {
