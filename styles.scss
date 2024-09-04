@@ -50,10 +50,14 @@ a {
         transform: scale(1.035);
       }
     }
-    svg {
+    svg,
+    img {
       display: block;
+      width: 24px;
+      height: 24px;
     }
   }
+
   &.buy-bnt {
     background: #3093b1;
     text-decoration: none;

@@ -373,8 +373,11 @@ a.social {
     transform: scale(1.035);
   }
 }
-a.social svg {
+a.social svg,
+a.social img {
   display: block;
+  width: 24px;
+  height: 24px;
 }
 a.buy-bnt {
   background: #3093b1;
