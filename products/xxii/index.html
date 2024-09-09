@@ -47,6 +47,22 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0253913503679816"
       crossorigin="anonymous"
     ></script>
+    <!-- Event snippet for Подписка conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-1024224081/BIyZCP-0x8sYENHWsegD",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link screen-reader-text" href="#navigation"
@@ -93,6 +109,7 @@
                   href="https://allegro.pl/oferta/viksel-vl-xxii-16296498105"
                   title="Kup na Allegro Viksel
               VL XXII"
+                  onclick="gtag_report_conversion('https://allegro.pl/oferta/viksel-vl-xxii-16296498105')"
                   >Kup na Allegro</a
                 >
               </div>
@@ -147,6 +164,7 @@
                 href="https://allegro.pl/oferta/viksel-vl-xxii-16296498105"
                 title="Kup na Allegro Viksel
               VL XXII"
+                onclick="gtag_report_conversion('https://allegro.pl/oferta/viksel-vl-xxii-16296498105')"
                 >Kup na Allegro</a
               >
             </div>
