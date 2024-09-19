@@ -490,6 +490,31 @@ h3 {
     transform: scale(1.035);
   }
 }
+.price-label {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: block;
+  width: 200px;
+  height: 146px;
+  line-height: 154px;
+  font-weight: bold;
+  font-size: 32px;
+  background: url(price.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .price-label {
+    top: 2.5%;
+    left: 2.5%;
+    width: 150px;
+    height: 109px;
+    line-height: 116px;
+    font-size: 24px;
+  }
+}
+
 .wrap {
   width: 100%;
   padding: 56px 0 0;
@@ -619,6 +644,13 @@ main .section {
   gap: 48px;
   align-items: center;
 }
+main .section.single {
+  justify-content: center;
+  gap: 0;
+}
+main .section.single .item iframe {
+  width: 100%;
+}
 @media screen and (max-width: 1024px) {
   main .section {
     flex-direction: column;
@@ -705,6 +737,7 @@ main .products {
 main .products .product-card {
   max-width: 47%;
   width: 100%;
+  position: relative;
   display: block;
   padding: 16px;
   background: #fff;
@@ -725,6 +758,10 @@ main .products .product-card {
   main .products .product-card:hover {
     box-shadow: -1px 1px 5px 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+  }
+  main .products .product-card:hover .price-label {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
   }
 }
 main .products .product-card figure {
@@ -812,5 +849,41 @@ main .footer-wrapper .light-footer ul {
 @media screen and (max-width: 480px) {
   .reviews .reviews-row .review {
     width: 100%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }/*# sourceMappingURL=styles.css.map */
