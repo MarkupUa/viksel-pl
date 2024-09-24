@@ -163,26 +163,17 @@ h3 {
 }
 .price-label {
   position: absolute;
-  top: 5%;
-  left: 5%;
-
   display: block;
-  width: 200px;
-  height: 146px;
-  line-height: 154px;
   font-weight: bold;
-  font-size: 32px;
   background: url(price.png) no-repeat;
   background-size: cover;
   text-align: center;
-  @media screen and (max-width: 600px) {
-    top: 2.5%;
-    left: 2.5%;
-    width: 150px;
-    height: 109px;
-    line-height: 116px;
-    font-size: 24px;
-  }
+  top: 2.5%;
+  left: 2.5%;
+  width: 150px;
+  height: 109px;
+  line-height: 116px;
+  font-size: 24px;
 }
 //
 .wrap {
@@ -288,6 +279,17 @@ h3 {
   }
 }
 //
+.main-product-img {
+  margin: 0;
+  padding: 0 0 48px;
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+//
+
 main {
   .content {
     padding: 40px 24px;
@@ -370,24 +372,27 @@ main {
       }
     }
   }
+
   .products {
     display: flex;
-    gap: 48px;
+    gap: 24px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 48px;
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 600px) {
       flex-direction: column;
     }
     @media screen and (max-width: 1024px) {
-      gap: 24px;
       padding-bottom: 24px;
     }
     .product-card {
-      max-width: 47%;
+      max-width: 23%;
       width: 100%;
       position: relative;
-      @media screen and (max-width: 860px) {
+      @media screen and (max-width: 1024px) {
+        max-width: 47%;
+      }
+      @media screen and (max-width: 600px) {
         max-width: 100%;
       }
       display: block;
@@ -421,9 +426,9 @@ main {
         text-align: center;
         font-weight: normal;
         padding: 0 16px 16px;
-        font-size: 32px;
-        @media screen and (max-width: 1024px) {
-          font-size: 28px;
+        font-size: 20px;
+        @media screen and (max-width: 600px) {
+          font-size: 24px;
         }
       }
     }
