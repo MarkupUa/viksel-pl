@@ -407,6 +407,12 @@ p {
   padding: 0 0 24px;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 24px 32px;
+}
+
 h1,
 h2,
 h3 {
@@ -524,7 +530,7 @@ h3 {
   right: 0;
   bottom: 0;
   padding: 0 24px;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 100500;
 }
@@ -815,6 +821,15 @@ main .footer-wrapper .footer {
   align-items: center;
   padding: 16px 24px;
 }
+main .footer-wrapper .footer.between {
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  main .footer-wrapper .footer.between {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1024px) {
   main .footer-wrapper .footer {
     padding: 16px;
@@ -823,9 +838,18 @@ main .footer-wrapper .footer {
 main .footer-wrapper .dark-footer {
   color: rgba(255, 255, 255, 0.8);
   background-color: #777;
+  align-items: start;
 }
 main .footer-wrapper .dark-footer p {
   padding: 0;
+}
+@media screen and (max-width: 600px) {
+  main .footer-wrapper .dark-footer p {
+    padding: 0 0 16px;
+  }
+}
+main .footer-wrapper .dark-footer a {
+  color: rgba(255, 255, 255, 0.8);
 }
 main .footer-wrapper .light-footer {
   justify-content: space-between;
@@ -836,6 +860,24 @@ main .footer-wrapper .light-footer ul {
   display: flex;
   list-style: none;
   gap: 8px;
+}
+
+.textwidget {
+  min-width: 181px;
+}
+.textwidget h3 {
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.textwidget ul {
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 600px) {
+  .textwidget {
+    width: 100%;
+  }
 }
 
 .reviews {

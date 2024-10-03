@@ -87,6 +87,11 @@ a {
 p {
   padding: 0 0 24px;
 }
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 24px 32px;
+}
 h1,
 h2,
 h3 {
@@ -194,7 +199,7 @@ h3 {
     right: 0;
     bottom: 0;
     padding: 0 24px;
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     z-index: 100500;
     .logo {
@@ -456,6 +461,13 @@ main {
       display: flex;
       align-items: center;
       padding: 16px 24px;
+      &.between {
+        justify-content: space-between;
+        @media screen and (max-width: 600px) {
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+      }
       @media screen and (max-width: 1024px) {
         padding: 16px;
       }
@@ -463,8 +475,15 @@ main {
     .dark-footer {
       color: rgba(255, 255, 255, 0.8);
       background-color: #777;
+      align-items: start;
       p {
         padding: 0;
+        @media screen and (max-width: 600px) {
+          padding: 0 0 16px;
+        }
+      }
+      a {
+        color: rgba(255, 255, 255, 0.8);
       }
     }
     .light-footer {
@@ -477,6 +496,23 @@ main {
         gap: 8px;
       }
     }
+  }
+}
+
+.textwidget {
+  min-width: 181px;
+  h3 {
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
   }
 }
 
