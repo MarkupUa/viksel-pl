@@ -469,6 +469,11 @@ h3 {
   text-align: right;
 }
 
+.bigger {
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .btn {
   display: block;
   border-radius: 4px;
@@ -575,8 +580,8 @@ h3 {
 .main-img .img-title {
   background-image: url(home-img.png);
   background-size: cover;
-  width: 560px;
-  height: 560px;
+  width: 600px;
+  height: 600px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -639,7 +644,7 @@ main .product-description {
   }
 }
 main .section {
-  padding: 0 0 48px;
+  padding: 0 0 96px;
   display: flex;
   gap: 48px;
   align-items: center;
@@ -651,10 +656,15 @@ main .section.single {
 main .section.single .item iframe {
   width: 100%;
 }
+@media screen and (max-width: 1280px) {
+  main .section {
+    padding: 0 0 48px;
+  }
+}
 @media screen and (max-width: 1024px) {
   main .section {
     flex-direction: column;
-    padding-bottom: 24px;
+    padding: 0 0 24px;
     gap: 24px;
   }
   main .section.flex-reverse {
@@ -674,6 +684,15 @@ main .section .item {
 }
 @media screen and (max-width: 1024px) {
   main .section .item {
+    width: 100%;
+  }
+}
+main .section .centered_item {
+  width: 75%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  main .section .centered_item {
     width: 100%;
   }
 }
@@ -699,6 +718,7 @@ main .section figure.section-img {
 main .section figure.section-img img {
   display: block;
   width: 100%;
+  border-radius: 16px;
 }
 main .section.inner-product .item {
   width: 30%;
