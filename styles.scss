@@ -369,6 +369,10 @@ main {
         @media screen and (max-width: 1024px) {
           width: 100%;
         }
+        iframe {
+          display: block;
+          width: 100% !important;
+        }
         img {
           display: block;
           width: 100%;

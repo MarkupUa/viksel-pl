@@ -721,6 +721,10 @@ main .section figure.section-img {
     width: 100%;
   }
 }
+main .section figure.section-img iframe {
+  display: block;
+  width: 100% !important;
+}
 main .section figure.section-img img {
   display: block;
   width: 100%;
