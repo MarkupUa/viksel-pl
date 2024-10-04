@@ -747,16 +747,21 @@ main .products {
   gap: 24px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 48px;
+  padding-bottom: 96px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1280px) {
   main .products {
-    flex-direction: column;
+    padding: 0 0 48px;
   }
 }
 @media screen and (max-width: 1024px) {
   main .products {
     padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .products {
+    flex-direction: column;
   }
 }
 main .products .product-card {

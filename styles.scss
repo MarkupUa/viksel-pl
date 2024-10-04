@@ -399,12 +399,15 @@ main {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 48px;
-    @media screen and (max-width: 600px) {
-      flex-direction: column;
+    padding-bottom: 96px;
+    @media screen and (max-width: 1280px) {
+      padding: 0 0 48px;
     }
     @media screen and (max-width: 1024px) {
       padding-bottom: 24px;
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
     }
     .product-card {
       max-width: 23%;
