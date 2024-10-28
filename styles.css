@@ -515,6 +515,9 @@ h3 {
   line-height: 116px;
   font-size: 24px;
 }
+.price-label small {
+  font-size: 14px;
+}
 
 .wrap {
   width: 100%;
