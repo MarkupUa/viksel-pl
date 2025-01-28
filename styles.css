@@ -379,6 +379,13 @@ a.social img {
   width: 24px;
   height: 24px;
 }
+a.social.x svg,
+a.social.x img, a.social.insta svg,
+a.social.insta img {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
 a.buy-bnt {
   background: #3093b1;
   text-decoration: none;
